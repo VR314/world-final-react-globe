@@ -12,8 +12,8 @@ export default function World() {
     /*
     400,
     600,
-    800,
-    1000, */
+    800, */
+    1000,
     1279,
     1492,
     1530,
@@ -29,7 +29,7 @@ export default function World() {
     1994,
     2021
   ];
-  const [year, setYear] = useState(1994);
+  const [year, setYear] = useState(1492);
 
   useEffect(() => {
     if (year === 2021) {
@@ -99,34 +99,38 @@ export default function World() {
             width: 'auto'
           }}
         >{`The World in ${year}`}</h1>
-        <button
-          style={{
-            position: 'absolute',
-            marginTop: '70vh',
-            marginLeft: '2.5vw',
-            height: '10%',
-            width: '2.5vw'
-          }}
-          onClick={() =>
-            setYear(possibleYears[possibleYears.indexOf(year) - 1])
-          }
-        >
-          {'<'}
-        </button>
-        <button
-          style={{
-            position: 'absolute',
-            marginTop: '70vh',
-            marginLeft: '25vw',
-            height: '10%',
-            width: '2.5vw'
-          }}
-          onClick={() =>
-            setYear(possibleYears[possibleYears.indexOf(year) + 1])
-          }
-        >
-          {'>'}
-        </button>
+        {year !== possibleYears[0] && (
+          <button
+            style={{
+              position: 'absolute',
+              marginTop: '70vh',
+              marginLeft: '2.5vw',
+              height: '10%',
+              width: '2.5vw'
+            }}
+            onClick={() =>
+              setYear(possibleYears[possibleYears.indexOf(year) - 1])
+            }
+          >
+            {'<'}
+          </button>
+        )}
+        {year !== possibleYears[possibleYears.length - 1] && (
+          <button
+            style={{
+              position: 'absolute',
+              marginTop: '70vh',
+              marginLeft: '25vw',
+              height: '10%',
+              width: '2.5vw'
+            }}
+            onClick={() =>
+              setYear(possibleYears[possibleYears.indexOf(year) + 1])
+            }
+          >
+            {'>'}
+          </button>
+        )}
       </div>
       <Globe
         ref={globeEl}
