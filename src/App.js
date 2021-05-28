@@ -39,15 +39,11 @@ export default function World() {
       fetch(`./geo/world_${year}.geojson`)
         .then((res) => res.json())
         .then((countries) => {
-          globeEl.current.pauseAnimation();
+          // globeEl.current.pauseAnimation();
           setCountries(countries);
 
           setTimeout(() => {
-            if (items) {
-              let location = items[possibleYears.indexOf(year)].data[stage].location;
-              globeEl.current.pointOfView(location)
-            }
-            globeEl.current.resumeAnimation();
+            // globeEl.current.resumeAnimation();
             setTransitionDuration(2000);
           }, 500);
         });
@@ -55,15 +51,12 @@ export default function World() {
       fetch(`./geo/world_2021.geojson`)
         .then((res) => res.json())
         .then((countries) => {
-          globeEl.current.pauseAnimation();
+          // globeEl.current.pauseAnimation();
           setCountries(countries);
 
           setTimeout(() => {
-            if (items) {
-              let location = items[yearIndex].data[stage].location;
-              globeEl.current.pointOfView(location)
-            }
-            globeEl.current.resumeAnimation();
+            globeEl.current.pointOfView({ lat: 45, lng: -75, altitude: 2.5 })
+            // globeEl.current.resumeAnimation();
             setTransitionDuration(2000);
           }, 500);
         });
@@ -88,6 +81,14 @@ export default function World() {
   useEffect(() => {
     setYear(possibleYears[yearIndex])
   }, [yearIndex])
+
+  //TODO: animation for changing pointOfView
+  useEffect(() => {
+    if (items) {
+      let location = items[yearIndex].data[stage].location;
+      globeEl.current.pointOfView(location)
+    }
+  }, [stage])
 
   return (
     <>
@@ -136,12 +137,12 @@ export default function World() {
                   width: 'auto'
                 }}
               >
-              {items &&
-                <div dangerouslySetInnerHTML={{ __html: JSON.stringify(items[yearIndex].data[stage].html) }}></div>
-              }
+                {items &&
+                  <div dangerouslySetInnerHTML={{ __html: (items[yearIndex].data[stage].html) }}></div>
+                }
               </p>
             </div>
-            {(year + stage !== 0 ) ? (
+            {(year + stage !== 0) ? (
               <button
                 style={{
                   position: "absolute",
@@ -152,18 +153,19 @@ export default function World() {
                 }}
                 onClick={() => {
                   if (stage === 0) {
-                    setStage(items[yearIndex-1].data.length - 1)
-                    setYearIndex(yearIndex-1)
+                    setStage(items[yearIndex - 1].data.length - 1)
+                    setYearIndex(yearIndex - 1)
                   }
                   else {
                     setStage(stage - 1);
-                }}
+                  }
+                }
                 }
               >
                 {"<"}
               </button>
-            ): <></>}
-            {(year !== 2021 ) ? (
+            ) : <></>}
+            {(year !== 2021) ? (
               //TODO: better button positioning
               <button
                 style={{
@@ -177,15 +179,16 @@ export default function World() {
                 onClick={() => {
                   if (stage === items[possibleYears.indexOf(year)].data.length - 1) {
                     setStage(0)
-                    setYearIndex(yearIndex+1)
+                    setYearIndex(yearIndex + 1)
                   }
-                  else{
+                  else {
                     setStage(stage + 1)
-                }}}
+                  }
+                }}
               >
                 {">"}
               </button>
-            ): <></>}
+            ) : <></>}
           </div>
         }
         <Globe
@@ -195,14 +198,14 @@ export default function World() {
             (d) => d.properties.ISO_A2 !== "AQ"
           )}
           polygonCapColor={({ properties: d }) => {
-              if (
-                d.NAME === "unclaimed" ||
-                d.NAME === "Africa" ||
-                d.NAME === "undefined"
-              ) {
-                return `rgba(1,1,1, 0.9)`;
-              }
-              return `hsla(${~~(360 * Math.random())},${50 + (Math.random() * 50)},${40 + (Math.random() * 40)},0.9)`;
+            if (
+              d.NAME === "unclaimed" ||
+              d.NAME === "Africa" ||
+              d.NAME === "undefined"
+            ) {
+              return `rgba(1,1,1, 0.9)`;
+            }
+            return `hsla(${~~(360 * Math.random())},${50 + (Math.random() * 50)},${40 + (Math.random() * 40)},0.9)`;
           }}
           polygonAltitude={0.005}
           polygonStrokeColor={'#FFFFFF'}
