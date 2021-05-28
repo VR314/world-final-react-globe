@@ -23,8 +23,8 @@ export default function World() {
   ];
   const [year, setYear] = useState(1492);
   const [stage, setStage] = useState(0);
-  const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
@@ -162,7 +162,7 @@ export default function World() {
               ) {
                 return `rgba(1,1,1, 0.9)`;
               }
-              return `hsla(${~~(360 * Math.random())},70%,70%,0.8)`;
+              return `hsla(${~~(360 * Math.random())},${50 + (Math.random() * 50)},${40 + (Math.random() * 40)},0.9)`;
 
               /*
               var keys = Object.keys(colors);
@@ -172,6 +172,7 @@ export default function World() {
             }
           }}
           polygonAltitude={0.005}
+          polygonStrokeColor={'#FFFFFF'}
           polygonLabel={({ properties: d }) => `
         <b>${
           d.NAME === "unclaimed" ||
