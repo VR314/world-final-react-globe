@@ -29,7 +29,6 @@ export default function World() {
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
-    //TODO: not triggering on start
   }
 
   useEffect(() => {
@@ -48,9 +47,13 @@ export default function World() {
         setCountries(countries);
 
         setTimeout(() => {
+          if(items){
+          let location = items[possibleYears.indexOf(year)].data[stage].location;
+          globeEl.current.pointOfView(location)
+          }
           globeEl.current.resumeAnimation();
           setTransitionDuration(2000);
-        }, 1500);
+        }, 1000);
       });
   }, [year]);
 
@@ -62,7 +65,7 @@ export default function World() {
         console.log(items)
         setItems(items)
       });
-  }, [year]);
+  }, []);
   /*
   useEffect(() => {
     // TODO: change color source ?
@@ -106,6 +109,8 @@ export default function World() {
                 position: "absolute",
                 color: "white",
                 margin: "5% 10%",
+                minHeight:'100vh',
+                overflowY: 'scroll'
               }}
             >
               <h1
