@@ -3,6 +3,11 @@ import Globe from "react-globe.gl";
 
 const { useState, useEffect, useRef } = React;
 
+// TODO:
+// - implement stages of each time period, getting & setting text
+// - implement rotating the globe(?) to match the regions mentioned
+// - more error-checking and editing of the geojson files to match our known curriculum
+
 export default function World() {
   const globeEl = useRef();
   const [colors, setColors] = useState([]);
@@ -23,7 +28,9 @@ export default function World() {
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
+    //TODO: not triggering on start
   }
+
   useEffect(() => {
     window.addEventListener("resize", handleWindowSizeChange);
     return () => {
@@ -66,10 +73,17 @@ export default function World() {
 
   return (
     <>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          color: "black",
+          backgroundColor: "#000011",
+          alignItems: "center",
+        }}
+      >
         <div
           style={{
-            position: "absolute",
+            position: "relative",
             height: "80vh",
             width: "30vw",
             zIndex: 1,
@@ -150,9 +164,11 @@ export default function World() {
               }
               return `hsla(${~~(360 * Math.random())},70%,70%,0.8)`;
 
+              /*
               var keys = Object.keys(colors);
               let rgb = colors[keys[(keys.length * Math.random()) << 0]];
               return `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.7)`;
+              */
             }
           }}
           polygonAltitude={0.005}
@@ -167,7 +183,7 @@ export default function World() {
       `}
           polygonsTransitionDuration={transitionDuration}
           height={height}
-          width={width}
+          width={width * 0.7}
         />
       </div>
     </>
