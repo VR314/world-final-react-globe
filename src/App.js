@@ -40,7 +40,7 @@ export default function World() {
 
   useEffect(() => {
     // load map data
-    fetch(`./world_${year}.geojson`)
+    fetch(`./geo/world_${year}.geojson`)
       .then((res) => res.json())
       .then((countries) => {
         globeEl.current.pauseAnimation();
