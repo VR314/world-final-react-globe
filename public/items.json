@@ -1,5 +1,20 @@
 [
     {
+        "year": 0,
+        "data": [
+            {
+                "title": "Tutorial 1",
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "html": "This is the world in 2021. Feel free to explore, drag the globe around, zoom in and out by scrolling in/out (or touchpad gestures). "
+            },
+            {
+                "title": "",
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "html": "At year 0 - stage 1"
+            }
+        ]
+    },
+    {
         "year": 1000,
         "data": [
             {

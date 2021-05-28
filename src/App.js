@@ -10,18 +10,13 @@ const { useState, useEffect, useRef } = React;
 
 export default function World() {
   const globeEl = useRef();
-  const [colors, setColors] = useState([]);
   const [countries, setCountries] = useState({ features: [] });
   const [transitionDuration, setTransitionDuration] = useState(1000);
   const possibleYears = [
-    /*
-    400,
-    600,
-    800, */
-    1000, 1279, 1492, 1530, 1650, 1715, 1783, 1815, 1880, 1914, 1920, 1938,
-    1945, 1994, 2021,
+    0, 1000, 1279, 1492, 1530, 1650, 1715, 1783, 1815, 1880, 1914, 1920, 1938, 1945, 1994, 2021,
   ];
-  const [year, setYear] = useState(1000);
+  const [yearIndex, setYearIndex] = useState(0);
+  const [year, setYear] = useState(0);
   const [stage, setStage] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
@@ -39,22 +34,40 @@ export default function World() {
   }, []);
 
   useEffect(() => {
-    // load map data
-    fetch(`./geo/world_${year}.geojson`)
-      .then((res) => res.json())
-      .then((countries) => {
-        globeEl.current.pauseAnimation();
-        setCountries(countries);
+    if (year !== 0) {
+      // load map data
+      fetch(`./geo/world_${year}.geojson`)
+        .then((res) => res.json())
+        .then((countries) => {
+          globeEl.current.pauseAnimation();
+          setCountries(countries);
 
-        setTimeout(() => {
-          if(items){
-          let location = items[possibleYears.indexOf(year)].data[stage].location;
-          globeEl.current.pointOfView(location)
-          }
-          globeEl.current.resumeAnimation();
-          setTransitionDuration(2000);
-        }, 1000);
-      });
+          setTimeout(() => {
+            if (items) {
+              let location = items[possibleYears.indexOf(year)].data[stage].location;
+              globeEl.current.pointOfView(location)
+            }
+            globeEl.current.resumeAnimation();
+            setTransitionDuration(2000);
+          }, 500);
+        });
+    } else {
+      fetch(`./geo/world_2021.geojson`)
+        .then((res) => res.json())
+        .then((countries) => {
+          globeEl.current.pauseAnimation();
+          setCountries(countries);
+
+          setTimeout(() => {
+            if (items) {
+              let location = items[yearIndex].data[stage].location;
+              globeEl.current.pointOfView(location)
+            }
+            globeEl.current.resumeAnimation();
+            setTransitionDuration(2000);
+          }, 500);
+        });
+    }
   }, [year]);
 
   useEffect(() => {
@@ -66,23 +79,15 @@ export default function World() {
         setItems(items)
       });
   }, []);
-  /*
-  useEffect(() => {
-    // TODO: change color source ?
-    fetch(
-      'https://raw.githubusercontent.com/corysimmons/colors.json/master/colors.json'
-    )
-      .then(res => res.json())
-      .then(colors => {
-        setColors(colors);
-      });
-  }, []);
-*/
 
   useEffect(() => {
     globeEl.current.controls().autoRotate = true;
     globeEl.current.controls().autoRotateSpeed = 0.3;
   }, []);
+
+  useEffect(() => {
+    setYear(possibleYears[yearIndex])
+  }, [yearIndex])
 
   return (
     <>
@@ -108,8 +113,9 @@ export default function World() {
               style={{
                 position: "absolute",
                 color: "white",
-                margin: "5% 10%",
-                minHeight:'100vh',
+                margin: "5% 5%",
+                minHeight: '100vh',
+                minWidth: '100%',
                 overflowY: 'scroll'
               }}
             >
@@ -119,20 +125,23 @@ export default function World() {
                   fontFamily: "Verdana",
                   fontSize: "1.75em",
                 }}
-              >{`The World in ${year}`}</h1>
+              >{year !== 0 ? `The World in ${year}` : `Welcome!`}</h1>
               <p
                 style={{
                   position: "absolute",
                   color: "white",
                   marginTop: 0,
+                  fontFamily: 'Tahoma',
+                  fontSize: '1.25em',
+                  width: 'auto'
                 }}
               >
-                {items &&
-                  <div dangerouslySetInnerHTML={{ __html: JSON.stringify(items[possibleYears.indexOf(year)].data[stage].html) }}></div>
-                }
+              {items &&
+                <div dangerouslySetInnerHTML={{ __html: JSON.stringify(items[yearIndex].data[stage].html) }}></div>
+              }
               </p>
             </div>
-            {year !== possibleYears[0] && (
+            {(year + stage !== 0 ) ? (
               <button
                 style={{
                   position: "absolute",
@@ -141,15 +150,20 @@ export default function World() {
                   height: "10%",
                   width: "2.5vw",
                 }}
-                //TODO: handle stage & year changes
-                onClick={() =>
-                  setYear(possibleYears[possibleYears.indexOf(year) - 1])
+                onClick={() => {
+                  if (stage === 0) {
+                    setStage(items[yearIndex-1].data.length - 1)
+                    setYearIndex(yearIndex-1)
+                  }
+                  else {
+                    setStage(stage - 1);
+                }}
                 }
               >
                 {"<"}
               </button>
-            )}
-            {year !== possibleYears[possibleYears.length - 1] && (
+            ): <></>}
+            {(year !== 2021 ) ? (
               //TODO: better button positioning
               <button
                 style={{
@@ -160,13 +174,18 @@ export default function World() {
                   width: "2.5vw",
                 }}
                 //TODO: handle stage & year changes
-                onClick={() =>
-                  setYear(possibleYears[possibleYears.indexOf(year) + 1])
-                }
+                onClick={() => {
+                  if (stage === items[possibleYears.indexOf(year)].data.length - 1) {
+                    setStage(0)
+                    setYearIndex(yearIndex+1)
+                  }
+                  else{
+                    setStage(stage + 1)
+                }}}
               >
                 {">"}
               </button>
-            )}
+            ): <></>}
           </div>
         }
         <Globe
@@ -176,7 +195,6 @@ export default function World() {
             (d) => d.properties.ISO_A2 !== "AQ"
           )}
           polygonCapColor={({ properties: d }) => {
-            if (colors) {
               if (
                 d.NAME === "unclaimed" ||
                 d.NAME === "Africa" ||
@@ -185,13 +203,6 @@ export default function World() {
                 return `rgba(1,1,1, 0.9)`;
               }
               return `hsla(${~~(360 * Math.random())},${50 + (Math.random() * 50)},${40 + (Math.random() * 40)},0.9)`;
-
-              /*
-              var keys = Object.keys(colors);
-              let rgb = colors[keys[(keys.length * Math.random()) << 0]];
-              return `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.7)`;
-              */
-            }
           }}
           polygonAltitude={0.005}
           polygonStrokeColor={'#FFFFFF'}
