@@ -3,11 +3,11 @@
         "year": 1000,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "<b>This is</b> html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -16,11 +16,11 @@
         "year": 1279,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 39.6, "lng": -98.5, "altitude": 2 },
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -29,11 +29,11 @@
         "year": 1492,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -42,11 +42,11 @@
         "year": 1530,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -55,11 +55,11 @@
         "year": 1650,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -68,11 +68,11 @@
         "year": 1715,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -82,11 +82,11 @@
         "year": 1783,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -95,11 +95,11 @@
         "year": 1815,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -108,11 +108,11 @@
         "year": 1880,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -122,11 +122,11 @@
         "year": 1914,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -136,11 +136,11 @@
         "year": 1920,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -150,11 +150,11 @@
         "year": 1938,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -163,11 +163,11 @@
         "year": 1945,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -176,11 +176,11 @@
         "year": 1994,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
@@ -189,11 +189,11 @@
         "year": 2021,
         "data": [
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": "This is html!"
             },
             {
-                "location": {"lat": 0,"long": 0, "altitude":2.5},
+                "location": {"lat": 0,"lng": 0, "altitude":2.5},
                 "html": ""
             }
         ]
