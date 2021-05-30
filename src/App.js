@@ -12,8 +12,7 @@ export default function World() {
   const [countries, setCountries] = useState({ features: [] });
   const [transitionDuration, setTransitionDuration] = useState(1000);
   const possibleYears = [
-    0, 1000, 1279, 1492, 1530, 1650, 1715, 1783, 1815, 1880, 1914, 1920, 1938,
-    1945, 1994, 2021,
+    0, 1000, 1279, 1492, 1650, 1783, 1880, 1920, 1938, 1945, 2021,
   ];
   const [yearIndex, setYearIndex] = useState(0);
   const [year, setYear] = useState(0);
