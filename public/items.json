@@ -3,14 +3,13 @@
         "year": 0,
         "data": [
             {
-                "title": "Tutorial 1",
-                "location": {"lat": 40,"lng": -75, "altitude":2.5},
-                "html": "This is the world in 2021. Feel free to explore, drag the globe around, zoom in and out by scrolling in/out (or touchpad gestures). "
-            },
-            {
-                "title": "",
-                "location": {"lat": 40,"lng": 40, "altitude":2.5},
-                "html": "At year 0 - stage 1"
+                "title": "Tutorial",
+                "location": {
+                    "lat": 40,
+                    "lng": -75,
+                    "altitude": 2.5
+                },
+                "html": "This is the world in 2021. Feel free to explore: drag the globe around, zoom in and out by scrolling in/out (or touchpad gestures). When you're ready to start our time-travel journey, press the button in the lower right. *Also, this site is a little computationally-intensive, so if the site ever freezes, simply refresh and it should work fine*"
             }
         ]
     },
@@ -18,14 +17,58 @@
         "year": 1000,
         "data": [
             {
-                "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
-                "html": "<b>This is</b> html!"
+                "title": "Overview",
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
+                "html": "Welcome to the year 1000! At this point, there are roughly 300 million people on the planet, and empires are popping up left and right! Let's see what's going on in each region of the world!"
             },
             {
-                "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
-                "html": ""
+                "title": "Europe",
+                "location": {
+                    "lat": 47,
+                    "lng": 7,
+                    "altitude": 1
+                },
+                "html": "Here in Europe, things are a little crazy (as they are in basically every point in history). The Byzantine Empire is the major player in the region, Feudalism is in full swing, and northern Europe is still reeling from Viking raids. Watch out for the Christian schism and the Crusades coming up! Meanwhile, the Umayyads provided a Muslim presence in Spain, which was called <i>al-Andalus</i>."
+            },
+            {
+                "title": "Middle East",
+                "location": {
+                    "lat": 30,
+                    "lng": 50,
+                    "altitude": 1
+                },
+                "html": "Speaking of Islam, Muslims took hold of the Middle East, and Shia-Sunni conflicts had been raging for a few hundred years at this point. This map shows the region as split into many different caliphates, but the Abbasids take complete control over the region not long after 1000. "
+            },
+            {
+                "title": "Asia",
+                "location": {
+                    "lat": 30,
+                    "lng": 115,
+                    "altitude": 1
+                },
+                "html": "Moving on to Asia, the Song dynasty, the second Chinese dynasty, is in power. China saw a very successful period under the Song, with printing processes allowing literature to spread. The Song ruled with neo-Confucianism and held civil service in high regard. In Japan, Buddhism and Shintoism supplanted themselves as the primary religions. In India and Southeast Asia, Hinduism was the primary religion, with Buddhist influence, and trade was the primary economic focus of these states. Watch out for the Delhi sultanate coming up! <p> <span style=\"font-size: 0.5rem\"> ALSO... THE MONGOLS ARE COMING!! </span></p>"
+            },
+            {
+                "title": "Africa",
+                "location": {
+                    "lat": 0,
+                    "lng": 20,
+                    "altitude": 2.5
+                },
+                "html": "In Africa, Islam spread from the Mediterranean and the trans-Saharan trade routes, as well as through the Indian Ocean trade routes in Swahili Coast, but local tribal faiths remained somewhat intact for much of the continent, and fledgling empires such as Mali began to appear. "
+            },
+            {
+                "title": "America",
+                "location": {
+                    "lat": -10,
+                    "lng": -75,
+                    "altitude": 2
+                },
+                "html": "On the other side of the world, in the Americas, Native American groups are all over North America, and the beginnings of Mesoamerican empires are in place."
             }
         ]
     },
@@ -34,12 +77,20 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 39.6, "lng": -98.5, "altitude": 2 },
+                "location": {
+                    "lat": 39.6,
+                    "lng": -98.5,
+                    "altitude": 2
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
@@ -49,12 +100,20 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
@@ -64,12 +123,20 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
@@ -79,12 +146,20 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
@@ -94,28 +169,43 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
     },
-
     {
         "year": 1783,
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
@@ -125,12 +215,20 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
@@ -140,60 +238,89 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
     },
-
     {
         "year": 1914,
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
     },
-
     {
         "year": 1920,
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
     },
-
     {
         "year": 1938,
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
@@ -203,12 +330,20 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
@@ -218,12 +353,20 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]
@@ -233,12 +376,20 @@
         "data": [
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": "This is html!"
             },
             {
                 "title": "",
-                "location": {"lat": 0,"lng": 0, "altitude":2.5},
+                "location": {
+                    "lat": 0,
+                    "lng": 0,
+                    "altitude": 2.5
+                },
                 "html": ""
             }
         ]

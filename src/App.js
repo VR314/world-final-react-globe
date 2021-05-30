@@ -4,16 +4,16 @@ import Globe from "react-globe.gl";
 const { useState, useEffect, useRef } = React;
 
 // TODO:
-// - implement stages of each time period, getting & setting text
-// - implement rotating the globe(?) to match the regions mentioned
 // - more error-checking and editing of the geojson files to match our known curriculum
+// - REMOVE SOME YEARS... 15 seems like a little too much
 
 export default function World() {
   const globeEl = useRef();
   const [countries, setCountries] = useState({ features: [] });
   const [transitionDuration, setTransitionDuration] = useState(1000);
   const possibleYears = [
-    0, 1000, 1279, 1492, 1530, 1650, 1715, 1783, 1815, 1880, 1914, 1920, 1938, 1945, 1994, 2021,
+    0, 1000, 1279, 1492, 1530, 1650, 1715, 1783, 1815, 1880, 1914, 1920, 1938,
+    1945, 1994, 2021,
   ];
   const [yearIndex, setYearIndex] = useState(0);
   const [year, setYear] = useState(0);
@@ -55,7 +55,7 @@ export default function World() {
           setCountries(countries);
 
           setTimeout(() => {
-            globeEl.current.pointOfView({ lat: 45, lng: -75, altitude: 2.5 })
+            globeEl.current.pointOfView({ lat: 45, lng: -75, altitude: 2.5 });
             // globeEl.current.resumeAnimation();
             setTransitionDuration(2000);
           }, 500);
@@ -68,27 +68,27 @@ export default function World() {
     fetch(`./items.json`)
       .then((res) => res.json())
       .then((items) => {
-        console.log(items)
-        setItems(items)
+        console.log(items);
+        setItems(items);
       });
   }, []);
 
   useEffect(() => {
     globeEl.current.controls().autoRotate = true;
-    globeEl.current.controls().autoRotateSpeed = 0.3;
+    globeEl.current.controls().autoRotateSpeed = 0.05;
   }, []);
 
   useEffect(() => {
-    setYear(possibleYears[yearIndex])
-  }, [yearIndex])
+    setYear(possibleYears[yearIndex]);
+  }, [yearIndex]);
 
   //TODO: animation for changing pointOfView
   useEffect(() => {
     if (items) {
       let location = items[yearIndex].data[stage].location;
-      globeEl.current.pointOfView(location)
+      globeEl.current.pointOfView(location);
     }
-  }, [stage])
+  }, [stage]);
 
   return (
     <>
@@ -100,7 +100,7 @@ export default function World() {
           alignItems: "center",
         }}
       >
-        {items &&
+        {items && (
           <div
             style={{
               position: "relative",
@@ -114,10 +114,10 @@ export default function World() {
               style={{
                 position: "absolute",
                 color: "white",
-                margin: "5% 5%",
-                minHeight: '100vh',
-                minWidth: '100%',
-                overflowY: 'scroll'
+                margin: "5% 5% 5% 1.5%",
+                minHeight: "100vh",
+                minWidth: "100%",
+                overflowY: "auto",
               }}
             >
               <h1
@@ -126,71 +126,81 @@ export default function World() {
                   fontFamily: "Verdana",
                   fontSize: "1.75em",
                 }}
-              >{year !== 0 ? `The World in ${year}` : `Welcome!`}</h1>
+              >
+                {year !== 0 ? `The World in ${year} CE` : `Welcome!`}
+              </h1>
               <p
                 style={{
                   position: "absolute",
                   color: "white",
                   marginTop: 0,
-                  fontFamily: 'Tahoma',
-                  fontSize: '1.25em',
-                  width: 'auto'
+                  fontFamily: "Segoe UI",
+                  fontSize: "1.25em",
+                  width: "auto",
                 }}
               >
-                {items &&
-                  <div dangerouslySetInnerHTML={{ __html: (items[yearIndex].data[stage].html) }}></div>
-                }
+                {items && (
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: items[yearIndex].data[stage].html,
+                    }}
+                  ></div>
+                )}
               </p>
             </div>
-            {(year + stage !== 0) ? (
+            {year + stage !== 0 ? (
               <button
                 style={{
                   position: "absolute",
-                  marginTop: "70vh",
+                  marginTop: "72.5vh",
                   marginLeft: "2.5vw",
-                  height: "10%",
+                  height: "10vh",
                   width: "2.5vw",
                 }}
                 onClick={() => {
                   if (stage === 0) {
-                    setStage(items[yearIndex - 1].data.length - 1)
-                    setYearIndex(yearIndex - 1)
-                  }
-                  else {
+                    setStage(items[yearIndex - 1].data.length - 1);
+                    setYearIndex(yearIndex - 1);
+                  } else {
                     setStage(stage - 1);
                   }
-                }
-                }
+                }}
               >
                 {"<"}
               </button>
-            ) : <></>}
-            {(year !== 2021) ? (
+            ) : (
+              <></>
+            )}
+            {year !== 2021 ? (
               //TODO: better button positioning
               <button
                 style={{
                   position: "absolute",
-                  marginTop: "70vh",
-                  marginLeft: "25vw",
-                  height: "10%",
+                  marginTop: "72.5vh",
+                  marginLeft: "22.5vw",
+                  height: "10vh",
                   width: "2.5vw",
                 }}
                 //TODO: handle stage & year changes
                 onClick={() => {
-                  if (stage === items[possibleYears.indexOf(year)].data.length - 1) {
-                    setStage(0)
-                    setYearIndex(yearIndex + 1)
-                  }
-                  else {
-                    setStage(stage + 1)
+                  if (
+                    stage ===
+                    items[possibleYears.indexOf(year)].data.length - 1
+                  ) {
+                    setStage(0);
+                    setYearIndex(yearIndex + 1);
+                  } else {
+                    setStage(stage + 1);
                   }
                 }}
               >
                 {">"}
               </button>
-            ) : <></>}
+            ) : (
+              <></>
+            )}
           </div>
-        }
+        )}
         <Globe
           ref={globeEl}
           globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
@@ -205,17 +215,20 @@ export default function World() {
             ) {
               return `rgba(1,1,1, 0.9)`;
             }
-            return `hsla(${~~(360 * Math.random())},${50 + (Math.random() * 50)},${40 + (Math.random() * 40)},0.9)`;
+            return `hsla(${~~(360 * Math.random())},${
+              50 + Math.random() * 50
+            },${40 + Math.random() * 40},0.9)`;
           }}
           polygonAltitude={0.005}
-          polygonStrokeColor={'#FFFFFF'}
+          polygonStrokeColor={"#FFFFFF"}
           polygonLabel={({ properties: d }) => `
-        <b>${d.NAME === "unclaimed" ||
-              d.NAME === "Africa" ||
-              d.NAME === "undefined"
-              ? ""
-              : d.NAME
-            }</b> 
+        <b>${
+          d.NAME === "unclaimed" ||
+          d.NAME === "Africa" ||
+          d.NAME === "undefined"
+            ? ""
+            : d.NAME
+        }</b> 
       `}
           polygonsTransitionDuration={transitionDuration}
           height={height}
