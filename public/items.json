@@ -50,7 +50,7 @@
                     "lng": 115,
                     "altitude": 1
                 },
-                "html": "Moving on to Asia, the Song dynasty, the second Chinese dynasty, is in power. China saw a very successful period under the Song, with printing processes allowing literature to spread. The Song ruled with neo-Confucianism and held civil service in high regard. In Japan, Buddhism and Shintoism supplanted themselves as the primary religions. In India and Southeast Asia, Hinduism was the primary religion, with Buddhist influence, and trade was the primary economic focus of these states. <p> <span style=\"font-size: 0.5rem\"> ALSO... THE MONGOLS ARE COMING!! </span></p>"
+                "html": "Moving on to Asia, where the Song dynasty is in power. China saw a very successful period under the Song, with printing processes allowing literature to spread and a stable government promoting peace. The Song ruled with neo-Confucianism and held civil service in high regard. In Japan, Buddhism and Shintoism supplanted themselves as the primary religions. In India and Southeast Asia, Hinduism was the primary religion, with Buddhist influence, and trade was the primary economic focus of these states. <p> <span style=\"font-size: 0.5rem\"> ALSO... THE MONGOLS ARE COMING!! </span></p>"
             },
             {
                 "title": "Africa",
@@ -64,11 +64,11 @@
             {
                 "title": "America",
                 "location": {
-                    "lat": -10,
+                    "lat": 0,
                     "lng": -75,
                     "altitude": 2
                 },
-                "html": "On the other side of the world, in the Americas, Native American groups are all over North America, and the beginnings of Mesoamerican empires are in place."
+                "html": "On the other side of the world, in the Americas, Native American groups are all over North America, and the beginnings of Mesoamerican empires are taking shape."
             }
         ]
     },
@@ -123,7 +123,7 @@
             {
                 "title": "America",
                 "location": {
-                    "lat": -10,
+                    "lat": 0,
                     "lng": -75,
                     "altitude": 2
                 },
@@ -135,22 +135,58 @@
         "year": 1492,
         "data": [
             {
-                "title": "",
+                "title": "Overview",
                 "location": {
                     "lat": 0,
                     "lng": 0,
                     "altitude": 2.5
                 },
-                "html": "This is html!"
+                "html": "<i>In 1492, Columbus sailed the ocean blue</i> is what we were taught as kids, but there was a lot more going on in the world at this time too, let's check it out. "
             },
             {
-                "title": "",
+                "title": "Europe",
+                "location": {
+                    "lat": 47,
+                    "lng": 7,
+                    "altitude": 1
+                },
+                "html": "In this period, nation-states have become even stronger. Not much has changed in Western Europe, although the Spanish had an inquisition that seemed pretty intense. the Hundred Years' War just wrapped up, but I doubt England and France will stop fighting anytime soon. Eastern Europe is much more interesting at this point, with the Russians establishing themselves in Moscow, and wait... what happened to the Byzantine Empire?"
+            },
+            {
+                "title": "Middle East",
+                "location": {
+                    "lat": 30,
+                    "lng": 50,
+                    "altitude": 1
+                },
+                "html": "Yep, just what I expected. It was those Turks I was telling you about earlier! The Ottoman Turks took over Constantinople and made it the capital of the Ottoman Empire. The Turks have also gained power throughout the rest of the Middle East as well."
+            },
+            {
+                "title": "Asia",
+                "location": {
+                    "lat": 30,
+                    "lng": 100,
+                    "altitude": 1
+                },
+                "html": "Finally, the Chinese were able to re-establish Chinese rule of China with the Ming dynasty! The Ming strengthened the tribute system to enforce their influence over SE Asia. Meanwhile, in India, political power is still somewhat decentralized, but Muslims are gaining power in the North, while Hindu trade-based societies still have control of the South."
+            },
+            {
+                "title": "Africa",
                 "location": {
                     "lat": 0,
-                    "lng": 0,
+                    "lng": 20,
                     "altitude": 2.5
                 },
-                "html": ""
+                "html": "In Africa, the Songhai grew in power, challenging the Mali over trans-Saharan trade dominance and growing wealthy themselves. Oh, and that Mansa Musa guy? He ended up being one of the richest men in history! I should've invested in gold instead of that Champacoin BS those Silk Road traders got me into... Anyways, speaking of money, the Eastern African trade states are still raking in profits from the Indian Ocean trade, especially as their technology gets better."
+            },
+            {
+                "title": "America",
+                "location": {
+                    "lat": 0,
+                    "lng": -75,
+                    "altitude": 2
+                },
+                "html": "The Golden Age of Mesoamerica, right before the Europeans show up. Everything is fabulous: the Maya, Aztec, and Inca are all thriving, managing large empires and sustaining advanced civilizations. I mean, Machu Picchu is amazing, and the Aztecs and Mayans built several large pyramids themselves as well. Real geniuses, they were, even though the Aztecs were a little brutal with their flower wars and humans sacrifices... a small price to pay for advanced calendars, I guess. "
             }
         ]
     },
@@ -164,7 +200,7 @@
                     "lng": 0,
                     "altitude": 2.5
                 },
-                "html": "This is html!"
+                "html": ""
             },
             {
                 "title": "",

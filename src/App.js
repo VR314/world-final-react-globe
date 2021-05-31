@@ -5,6 +5,7 @@ const { useState, useEffect, useRef } = React;
 // TODO:
 // - more error-checking and editing of the geojson files to match our known curriculum
 // - remove PR, DR, Cuba, Jamaica, etc. from ancient maps
+// - add good favicon
 export default function World() {
   const globeEl = useRef();
   const [countries, setCountries] = useState({ features: [] });
@@ -12,8 +13,8 @@ export default function World() {
   const possibleYears = [
     0, // DONE
     1000, // DONE
-    1279,
-    1492,
+    1279, // DONE
+    1492, // DONE
     1650,
     1783,
     1880,
@@ -21,8 +22,8 @@ export default function World() {
     1945,
     2021,
   ];
-  const [yearIndex, setYearIndex] = useState(2);
-  const [year, setYear] = useState(1279);
+  const [yearIndex, setYearIndex] = useState(3);
+  const [year, setYear] = useState(1492);
   const [stage, setStage] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
