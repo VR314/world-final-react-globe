@@ -50,7 +50,7 @@
                     "lng": 115,
                     "altitude": 1
                 },
-                "html": "Moving on to Asia, the Song dynasty, the second Chinese dynasty, is in power. China saw a very successful period under the Song, with printing processes allowing literature to spread. The Song ruled with neo-Confucianism and held civil service in high regard. In Japan, Buddhism and Shintoism supplanted themselves as the primary religions. In India and Southeast Asia, Hinduism was the primary religion, with Buddhist influence, and trade was the primary economic focus of these states. Watch out for the Delhi sultanate coming up! <p> <span style=\"font-size: 0.5rem\"> ALSO... THE MONGOLS ARE COMING!! </span></p>"
+                "html": "Moving on to Asia, the Song dynasty, the second Chinese dynasty, is in power. China saw a very successful period under the Song, with printing processes allowing literature to spread. The Song ruled with neo-Confucianism and held civil service in high regard. In Japan, Buddhism and Shintoism supplanted themselves as the primary religions. In India and Southeast Asia, Hinduism was the primary religion, with Buddhist influence, and trade was the primary economic focus of these states. <p> <span style=\"font-size: 0.5rem\"> ALSO... THE MONGOLS ARE COMING!! </span></p>"
             },
             {
                 "title": "Africa",
@@ -76,22 +76,58 @@
         "year": 1279,
         "data": [
             {
-                "title": "",
-                "location": {
-                    "lat": 39.6,
-                    "lng": -98.5,
-                    "altitude": 2
-                },
-                "html": "This is html!"
-            },
-            {
-                "title": "",
+                "title": "Overview",
                 "location": {
                     "lat": 0,
                     "lng": 0,
                     "altitude": 2.5
                 },
-                "html": ""
+                "html": "Now, we're at the year 1279! Let's take a look around."
+            },
+            {
+                "title": "Europe",
+                "location": {
+                    "lat": 47,
+                    "lng": 7,
+                    "altitude": 1
+                },
+                "html": "Feudalism still exists here in Europe, but nation-states are growing in power. The Magna Carta was signed in England, and the Spanish drove out the Muslims (although the worst is still yet to come...). The Byzantine Empire is still strong, although those Turks seem to be a little intimidating..."
+            },
+            {
+                "title": "Asia",
+                "location": {
+                    "lat": 30,
+                    "lng": 100,
+                    "altitude": 1
+                },
+                "html": "And here it is: the Mongols. They took <b><i>everything.</b></i>. From horse-riding nomads to rulers of Asia and the Middle East... that Genghis Khan dude was crazy (successful)! The Chagatai, Golden Horde, Ilkhanate, and the Yuan Dynasty in China were all Mongol controlled-areas. Just mindblowing stuff... Still, they brought a lot of trade across their empire, even though a lot more was being exchanged than just goods (*cough, cough* The Black Death)!"
+            },
+            {
+                "title": "Middle East",
+                "location": {
+                    "lat": 30,
+                    "lng": 50,
+                    "altitude": 1
+                },
+                "html": "After the Abbasid Empire had its <i>Pax Islamica</i>, the Abbasids finally fell last year and those pesky Mongols took control of the Middle East! All this in the middle of the Crusades and other intra-Muslim conflicts! The nerve!"
+            },
+            {
+                "title": "Africa",
+                "location": {
+                    "lat": 0,
+                    "lng": 20,
+                    "altitude": 2.5
+                },
+                "html": "In Africa, Islam continued to spread from the Mediterranean and the trans-Saharan trade routes, as well as through the Indian Ocean trade routes in Swahili Coast. Mali continued to grow in strength as well, and apparently this guy named Mansa Musa is betting big on the gold trade there, hope it works out for him!"
+            },
+            {
+                "title": "America",
+                "location": {
+                    "lat": -10,
+                    "lng": -75,
+                    "altitude": 2
+                },
+                "html": "Again, the fledgling empires in Central America and the Andes are continuing to grow, as they are slowly coming up on the peak of their civilizations. The Mayans establish themselves in the Yucatan."
             }
         ]
     },

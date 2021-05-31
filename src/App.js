@@ -1,21 +1,28 @@
 import React from "react";
 import Globe from "react-globe.gl";
-
 const { useState, useEffect, useRef } = React;
 
 // TODO:
 // - more error-checking and editing of the geojson files to match our known curriculum
-// - REMOVE SOME YEARS... 15 seems like a little too much
-
+// - remove PR, DR, Cuba, Jamaica, etc. from ancient maps
 export default function World() {
   const globeEl = useRef();
   const [countries, setCountries] = useState({ features: [] });
   const [transitionDuration, setTransitionDuration] = useState(1000);
   const possibleYears = [
-    0, 1000, 1279, 1492, 1650, 1783, 1880, 1920, 1938, 1945, 2021,
+    0, // DONE
+    1000, // DONE
+    1279,
+    1492,
+    1650,
+    1783,
+    1880,
+    1920,
+    1945,
+    2021,
   ];
-  const [yearIndex, setYearIndex] = useState(0);
-  const [year, setYear] = useState(0);
+  const [yearIndex, setYearIndex] = useState(2);
+  const [year, setYear] = useState(1279);
   const [stage, setStage] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
@@ -50,12 +57,10 @@ export default function World() {
       fetch(`./geo/world_2021.geojson`)
         .then((res) => res.json())
         .then((countries) => {
-          // globeEl.current.pauseAnimation();
           setCountries(countries);
 
           setTimeout(() => {
             globeEl.current.pointOfView({ lat: 45, lng: -75, altitude: 2.5 });
-            // globeEl.current.resumeAnimation();
             setTransitionDuration(2000);
           }, 500);
         });
@@ -63,7 +68,6 @@ export default function World() {
   }, [year]);
 
   useEffect(() => {
-    // load items
     fetch(`./items.json`)
       .then((res) => res.json())
       .then((items) => {
@@ -134,7 +138,7 @@ export default function World() {
                   color: "white",
                   marginTop: 0,
                   fontFamily: "Segoe UI",
-                  fontSize: "1.25em",
+                  fontSize: "1.15em",
                   width: "auto",
                 }}
               >
@@ -180,7 +184,6 @@ export default function World() {
                   height: "10vh",
                   width: "2.5vw",
                 }}
-                //TODO: handle stage & year changes
                 onClick={() => {
                   if (
                     stage ===
