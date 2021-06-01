@@ -186,7 +186,7 @@
                     "lng": -75,
                     "altitude": 2
                 },
-                "html": "The Golden Age of Mesoamerica, right before the Europeans show up. Everything is fabulous: the Maya, Aztec, and Inca are all thriving, managing large empires and sustaining advanced civilizations. I mean, Machu Picchu is amazing, and the Aztecs and Mayans built several large pyramids themselves as well. Real geniuses, they were, even though the Aztecs were a little brutal with their flower wars and humans sacrifices... a small price to pay for advanced calendars, I guess. "
+                "html": "The height of Mesoamerica, right before the Europeans show up. Everything is fabulous: the Maya, Aztec, and Inca are all thriving, managing large empires and sustaining advanced civilizations. I mean, Machu Picchu is amazing, and the Aztecs and Mayans built several large pyramids themselves as well. Real geniuses, they were, even though the Aztecs were a little brutal with their flower wars and humans sacrifices... a small price to pay for advanced calendars, I guess. "
             }
         ]
     },
@@ -194,22 +194,58 @@
         "year": 1650,
         "data": [
             {
-                "title": "",
+                "title": "Overview",
                 "location": {
                     "lat": 0,
                     "lng": 0,
                     "altitude": 2.5
                 },
-                "html": ""
+                "html": "Welcome to 1650! A lot has changed in the 150 years or so we skipped over, so let's hop right in!"
             },
             {
-                "title": "",
+                "title": "Europe",
+                "location": {
+                    "lat": 47,
+                    "lng": 7,
+                    "altitude": 1
+                },
+                "html": "The pattern of nation-states growing stronger continued into this period, and the Ottoman Empire's expansion begins to threaten the rest of Europe. However, Europe's biggest influence on this period is what happened throughout the rest of the world..."
+            },
+            {
+                "title": "Middle East",
+                "location": {
+                    "lat": 30,
+                    "lng": 50,
+                    "altitude": 1
+                },
+                "html": "Like I just mentioned, the Ottomans are growing to take over much of the Middle East, while the Safavid and Mughal Empires (the three collectively known as the Gunpowder Empires) are all jostling for control in the region."
+            },
+            {
+                "title": "Asia",
+                "location": {
+                    "lat": 30,
+                    "lng": 100,
+                    "altitude": 1
+                },
+                "html": "Just as the Chinese regained native control of China, the Manchus (from Manchuria, known for their <a style='color: #fff' href='https://i.pinimg.com/originals/3a/81/1e/3a811eaf9de776f6c9abb6fa2dae3881.jpg'>hair</a>). Meanwhile, the remnants of the Mongol Empire are still present in Central Asia, while the Mughal Empire (Muslims) are in control of much of India. Look for political and religious tensions to allow the British to leech some power in the region! Wait, and the Indonesian islands are now... the Dutch East Indies?? These Europeans have one taste of nutmeg and they go conquering foreign lands for it, they never learn..."
+            },
+            {
+                "title": "America",
                 "location": {
                     "lat": 0,
-                    "lng": 0,
+                    "lng": -75,
+                    "altitude": 2
+                },
+                "html": "What a grotesque downfall. All it took was a few Europeans and their nasty germs to wipe out some of the greatest empires the world has ever seen. And now what is this? Nearly every European nation wants a piece of the Americas, and the Spanish got most of it! And in traditional Spanish fashion, they establish a strict racial code and an economic system that favors the rich whites... how tragic. Oh, and there's a few American colonies now, but it's still the Wild Wild East out there."
+            },
+            {
+                "title": "Africa",
+                "location": {
+                    "lat": 0,
+                    "lng": 20,
                     "altitude": 2.5
                 },
-                "html": ""
+                "html": "Luckily, Africa is safe... for now. Regional mini-empires are sprouting all over the continent, indicating progress!"
             }
         ]
     },
