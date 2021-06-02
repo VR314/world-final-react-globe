@@ -9,7 +9,7 @@
                     "lng": -75,
                     "altitude": 2.5
                 },
-                "html": "This is the world in 2021. Feel free to explore: drag the globe around, zoom in and out by scrolling in/out (or touchpad gestures). When you're ready to start our time-travel journey, press the button in the lower right. *Also, this site is a little computationally-intensive, so if the site ever freezes, simply refresh and it should work fine*"
+                "html": "This is the world in 2021. Feel free to explore: drag the globe around, zoom in and out by scrolling in/out (or touchpad gestures). When you're ready to start our time-travel journey, press the button in the lower right. <i>Also, this site is a little computationally-intensive, so if the site ever freezes, simply refresh and it should work fine. I guarantee that this map will have some errors in naming or borders, I've made a cursory effort to clean it up, but keep in mind that this may not be 100% accurate, especially in Asia and Africa.</i>"
             }
         ]
     },
@@ -168,7 +168,7 @@
                     "lng": 100,
                     "altitude": 1
                 },
-                "html": "Finally, the Chinese were able to re-establish Chinese rule of China with the Ming dynasty! The Ming strengthened the tribute system to enforce their influence over SE Asia. Meanwhile, in India, political power is still somewhat decentralized, but Muslims are gaining power in the North, while Hindu trade-based societies still have control of the South."
+                "html": "Finally, the Chinese were able to re-establish Chinese rule of China with the Ming dynasty! The Ming strengthened the tribute system to enforce their influence over SE Asia. Interestingly, Japan is in an era of feudalism that was eerily similar to what was happening in Europe just now. Meanwhile, in India, political power is still somewhat decentralized, but Muslims are gaining power in the North, while Hindu trade-based societies still have control of the South."
             },
             {
                 "title": "Africa",
@@ -177,7 +177,7 @@
                     "lng": 20,
                     "altitude": 2.5
                 },
-                "html": "In Africa, the Songhai grew in power, challenging the Mali over trans-Saharan trade dominance and growing wealthy themselves. Oh, and that Mansa Musa guy? He ended up being one of the richest men in history! I should've invested in gold instead of that Champacoin BS those Silk Road traders got me into... Anyways, speaking of money, the Eastern African trade states are still raking in profits from the Indian Ocean trade, especially as their technology gets better."
+                "html": "In Africa, the Songhai grew in power, challenging the Mali over trans-Saharan trade dominance and growing wealthy themselves. Oh, and that Mansa Musa guy? He ended up being one of the richest men in history! Meanwhile, the Eastern African trade states are still raking in profits from the Indian Ocean trade, especially as their technology gets better."
             },
             {
                 "title": "America",
@@ -227,7 +227,7 @@
                     "lng": 100,
                     "altitude": 1
                 },
-                "html": "Just as the Chinese regained native control of China, the Manchus (from Manchuria, known for their <a style='color: #fff' href='https://i.pinimg.com/originals/3a/81/1e/3a811eaf9de776f6c9abb6fa2dae3881.jpg'>hair</a>). Meanwhile, the remnants of the Mongol Empire are still present in Central Asia, while the Mughal Empire (Muslims) are in control of much of India. Look for political and religious tensions to allow the British to leech some power in the region! Wait, and the Indonesian islands are now... the Dutch East Indies?? These Europeans have one taste of nutmeg and they go conquering foreign lands for it, they never learn..."
+                "html": "Just as the Chinese regained native control of China, the Manchus (from Manchuria, known for their <a style='color: #fff' href='https://i.pinimg.com/originals/3a/81/1e/3a811eaf9de776f6c9abb6fa2dae3881.jpg'>hair</a>) institute the Qing Dynasty. Meanwhile, the remnants of the Mongol Empire are still present in Central Asia, while the Mughal Empire (Muslims) are in control of much of India. Look for political and religious tensions to allow the British to leech some power in the region! Wait, and the Indonesian islands are now... the Dutch East Indies?? These Europeans have one taste of nutmeg and they go conquering foreign lands for it, they never learn..."
             },
             {
                 "title": "America",
@@ -253,22 +253,58 @@
         "year": 1783,
         "data": [
             {
-                "title": "",
+                "title": "Overview",
                 "location": {
                     "lat": 0,
                     "lng": 0,
                     "altitude": 2.5
                 },
-                "html": "This is html!"
+                "html": "It's 1783! The world's borders are slowly but surely resembling those of today, but there's still a long way to go... let's take a look around!"
             },
             {
-                "title": "",
+                "title": "Europe",
+                "location": {
+                    "lat": 47,
+                    "lng": 7,
+                    "altitude": 1
+                },
+                "html": "Again, nation-states in Western Europe are strengthening their territorial claims in Europe and around the world. Much of Europe is still somewhat stable, aside from the ex-Holy Roman Empire, which looks like a second grade scrapbook on the map right now. Russia has grown into somewhat the Russia we know today, and the Ottomans are holding onto Anatolia strongly."
+            },
+            {
+                "title": "Middle East",
+                "location": {
+                    "lat": 30,
+                    "lng": 50,
+                    "altitude": 1
+                },
+                "html": "While the Ottomans are still holding firmly to their territory, the rest of the Middle East is still shifting, this time we see the resurgence of an Iranian/Persian state, as well as Afghanistan."
+            },
+            {
+                "title": "Asia",
+                "location": {
+                    "lat": 30,
+                    "lng": 100,
+                    "altitude": 1
+                },
+                "html": "European influence in Asia is increasing, with trade monopolies in certain cities like Goa and Madras, and we see the beginnings of British control over India, since India is still comprised of decentralized politically. China is still under the rule of the Qing dynasty."
+            },
+            {
+                "title": "America",
                 "location": {
                     "lat": 0,
-                    "lng": 0,
+                    "lng": -75,
+                    "altitude": 2
+                },
+                "html": "In a few centuries, Europeans have taken full control of South and Central America, exploiting its colonies for resources (thanks mercantilism!). Oh, look! It's the baby United States! Just having gained independence by throwing tea into a harbor or something, our wood-toothed hero George Washington has created the glorious nation that will start to terrorize the rest of the world in the next couple of centuries... whoops!"
+            },
+            {
+                "title": "Africa",
+                "location": {
+                    "lat": 0,
+                    "lng": 20,
                     "altitude": 2.5
                 },
-                "html": ""
+                "html": "Even more African empires are growing in central Africa, but keep an eye on Dutch and Portuguese settlements in South Africa, it's an indicator of what's to come."
             }
         ]
     },
