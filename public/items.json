@@ -309,48 +309,61 @@
         ]
     },
     {
-        "year": 1880,
-        "data": [
-            {
-                "title": "",
-                "location": {
-                    "lat": 0,
-                    "lng": 0,
-                    "altitude": 2.5
-                },
-                "html": "This is html!"
-            },
-            {
-                "title": "",
-                "location": {
-                    "lat": 0,
-                    "lng": 0,
-                    "altitude": 2.5
-                },
-                "html": ""
-            }
-        ]
-    },
-    {
         "year": 1920,
         "data": [
             {
-                "title": "",
+                "title": "Overview",
                 "location": {
                     "lat": 0,
                     "lng": 0,
                     "altitude": 2.5
                 },
-                "html": "This is html!"
+                "html": "Woah, the world changed a lot... we skipping a few hundred years here and there is not going to be feasible now that the world is changing so fast! Anyways, here's 1920!"
             },
             {
-                "title": "",
+                "title": "Europe",
+                "location": {
+                    "lat": 47,
+                    "lng": 7,
+                    "altitude": 1
+                },
+                "html": "A LOT has happened in Europe. The serfs were freed (not really) in Russia, a bunch of monarchies are starting to be challenged internally (see: the French Revolution), and Industrialization! Industrialization and the harsh nationalist climate in the region led to the First World War (shh! don't tell them it's called that, they're gonna freak out). It all started over Austrians being mad at Serbians for killing their prince, and before you know it, Russia, Germany, France, and the US have all intervened... we all need to learn from Switzerland! Oh, and Russia is now the Soviet Union, thanks to Lenin."
+            },
+            {
+                "title": "Middle East",
+                "location": {
+                    "lat": 30,
+                    "lng": 50,
+                    "altitude": 1
+                },
+                "html": "The Ottoman Empire was weakening throughout the 1800s, partially due to a poor approach to industrialization, and it finally became Turkey as we know it today post-WWI. The Middle East and the Arabian Peninsula have developed into nations much like they appear today, but European intervention and occupation of the region are starting to cause anti-Western sentiment. "
+            },
+            {
+                "title": "Asia",
+                "location": {
+                    "lat": 30,
+                    "lng": 100,
+                    "altitude": 1
+                },
+                "html": "China has been though <i>a lot</i>. From the Opium Wars, to Spheres of Influence causing the Boxer and Taiping Rebellions, there is a nationalist revolution, abolishing the dynastic system. At this same time, British India is now controlling the entire subcontinent, although I think Gandhi, the INC, and the Muslim League have a few things to say about that."
+            },
+            {
+                "title": "America",
                 "location": {
                     "lat": 0,
-                    "lng": 0,
+                    "lng": -75,
+                    "altitude": 2
+                },
+                "html": "Nations in South America are beginning to take shape, with decolonization/independence movements dominating the 1800s. North America has now grown to its present state, and the US, with its intervention in WWI, is now a world power, deeply vested in foreign affairs. First, we better figure out this Great Depression stuff."
+            },
+            {
+                "title": "Africa",
+                "location": {
+                    "lat": 0,
+                    "lng": 20,
                     "altitude": 2.5
                 },
-                "html": ""
+                "html": "Africa is now where South America was last century, with complete European colonialism and imperialist rule, exploiting resources and taking advantage of the native peoples, instigating unnecessary conflicts... all for money and power."
             }
         ]
     },
