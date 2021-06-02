@@ -368,29 +368,6 @@
         ]
     },
     {
-        "year": 1945,
-        "data": [
-            {
-                "title": "",
-                "location": {
-                    "lat": 0,
-                    "lng": 0,
-                    "altitude": 2.5
-                },
-                "html": "This is html!"
-            },
-            {
-                "title": "",
-                "location": {
-                    "lat": 0,
-                    "lng": 0,
-                    "altitude": 2.5
-                },
-                "html": ""
-            }
-        ]
-    },
-    {
         "year": 2021,
         "data": [
             {

@@ -17,12 +17,11 @@ export default function World() {
     1492, // DONE
     1650, // DONE
     1783, // DONE
-    1920,
-    1945,
+    1920, // DONE
     2021,
   ];
-  const [yearIndex, setYearIndex] = useState(6);
-  const [year, setYear] = useState(1920);
+  const [yearIndex, setYearIndex] = useState(7);
+  const [year, setYear] = useState(2021);
   const [stage, setStage] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
