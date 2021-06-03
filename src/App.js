@@ -4,7 +4,6 @@ const { useState, useEffect, useRef } = React;
 
 // TODO:
 // - more error-checking and editing of the geojson files to match our known curriculum
-// - remove PR, DR, Cuba, Jamaica, etc. from ancient maps
 // - add good favicon
 export default function World() {
   const globeEl = useRef();
