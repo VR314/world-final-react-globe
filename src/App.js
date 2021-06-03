@@ -118,7 +118,7 @@ export default function World() {
                 color: "white",
                 margin: "5% 5% 5% 1.5%",
                 minHeight: "100vh",
-                minWidth: "100%",
+                minWidth: "95%",
                 overflowY: "auto",
               }}
             >
@@ -173,7 +173,7 @@ export default function World() {
             ) : (
               <></>
             )}
-            {year !== 2021 ? (
+            {(year !== 2021 || stage !== 6)  ? (
               //TODO: better button positioning
               <button
                 style={{

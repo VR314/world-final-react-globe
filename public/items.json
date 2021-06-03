@@ -371,22 +371,67 @@
         "year": 2021,
         "data": [
             {
-                "title": "",
+                "title": "Overview",
                 "location": {
                     "lat": 0,
                     "lng": 0,
                     "altitude": 2.5
                 },
-                "html": "This is html!"
+                "html": "And... here we are! Back to the modern world at last... airplanes, cell phones, the internet, rockets... man I love modern technology. And man am I glad we didn't have to live through WWII or the Cold War, those were some pretty intense times."
             },
             {
-                "title": "",
+                "title": "Europe",
+                "location": {
+                    "lat": 47,
+                    "lng": 7,
+                    "altitude": 1
+                },
+                "html": "So, Hitler started WWII, the Holocaust, and the separation of Germany all happened so quickly. Due to the Cold War, Western Europe is still closely-allied with the US, while Eastern Europe is more closely under Russian influence. Luckly, the EU and the Eurozone have made Europe more interconnected and free for commerce."
+            },
+            {
+                "title": "Middle East",
+                "location": {
+                    "lat": 30,
+                    "lng": 50,
+                    "altitude": 1
+                },
+                "html": "Political instability due to oil in the region and Western interventionism has led to terrorist/extremist groups, intense rivalries between nations, and intermittent violence. The liberalization of the region due to globalization may ameliorate the situation, but that is to be seen. Meanwhile, small nations like the UAE, Kuwait, and Qatar are becoming economic powerhouses due to being oil-rich."
+            },
+            {
+                "title": "Asia",
+                "location": {
+                    "lat": 30,
+                    "lng": 100,
+                    "altitude": 1
+                },
+                "html": "China's CCP has retained control since 1949, and has instituted state socialism and become somewhat restrictive (ex. one-child policy, Uighyr genocide) but has created an economy strong in both manufacturing and technical skills. Japan has industrialized under US guidance post-WWII, and is now one of the most technologically advanced nations in the world. India gained independence in 1947, and since has been jockeying for influence on the world stage."
+            },
+            {
+                "title": "America",
+                "location": {
+                    "lat": 0,
+                    "lng": -75,
+                    "altitude": 2
+                },
+                "html": "Not much has changed in North America, but free trade in the region has promoted economic cooperation. Central and South America were unstable due to US interventionism during the Cold War, but the situation has since improved."
+            },
+            {
+                "title": "Africa",
+                "location": {
+                    "lat": 0,
+                    "lng": 20,
+                    "altitude": 2.5
+                },
+                "html": "After the decolonization movements during the Cold War, African nations like Nigeria have been rapidly industrializing, although famine, drought, and lack of access to modern technologies have hindered Africa's growth."
+            },
+            {
+                "title": "END",
                 "location": {
                     "lat": 0,
                     "lng": 0,
                     "altitude": 2.5
                 },
-                "html": ""
+                "html": "And that's it! That's the end of our blazing-fast tour of world history! I love seeing how the world changes from a geographical standpoint, which can show a lot about how nations grow internally or interact with one another. If you're interested in this sort of thing, <a style='color: #fff' href='http://geacron.com/home-en/'>this</a> is an incredible, accurate resource!"
             }
         ]
     }
