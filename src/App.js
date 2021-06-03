@@ -2,9 +2,6 @@ import React from "react";
 import Globe from "react-globe.gl";
 const { useState, useEffect, useRef } = React;
 
-// TODO:
-// - more error-checking and editing of the geojson files to match our known curriculum
-// - add good favicon
 export default function World() {
   const globeEl = useRef();
   const [countries, setCountries] = useState({ features: [] });
@@ -17,7 +14,7 @@ export default function World() {
     1650, // DONE
     1783, // DONE
     1920, // DONE
-    2021,
+    2021, // DONE
   ];
   const [yearIndex, setYearIndex] = useState(0);
   const [year, setYear] = useState(0);
@@ -172,7 +169,7 @@ export default function World() {
             ) : (
               <></>
             )}
-            {(year !== 2021 || stage !== 6)  ? (
+            {year !== 2021 || stage !== 6 ? (
               //TODO: better button positioning
               <button
                 style={{
@@ -212,7 +209,8 @@ export default function World() {
               d.NAME === "unclaimed" ||
               d.NAME === "Africa" ||
               d.NAME === "undefined" ||
-              d.NAME === "Unclaimed"
+              d.NAME === "Unclaimed" ||
+              d.NAME === "null"
             ) {
               return `rgba(1,1,1, 0.9)`;
             }
@@ -227,7 +225,8 @@ export default function World() {
           d.NAME === "unclaimed" ||
           d.NAME === "Africa" ||
           d.NAME === "undefined" ||
-          d.NAME === "Unclaimed"
+          d.NAME === "Unclaimed" ||
+          d.NAME === "null"
             ? ""
             : d.NAME
         }</b> 

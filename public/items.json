@@ -431,7 +431,7 @@
                     "lng": 0,
                     "altitude": 2.5
                 },
-                "html": "And that's it! That's the end of our blazing-fast tour of world history! I love seeing how the world changes from a geographical standpoint, which can show a lot about how nations grow internally or interact with one another. If you're interested in this sort of thing, <a style='color: #fff' href='http://geacron.com/home-en/'>this</a> is an incredible, accurate resource!"
+                "html": "And that's it! That's the end of our blazing-fast tour of world history! I love seeing how the world changes from a geographical standpoint, which can show a lot about how nations grow internally or interact with one another. If you're interested in this sort of thing, <a style='color: #fff' href='http://geacron.com/home-en/'>this</a> is an incredible, accurate resource! The data source for this was <a href='https://github.com/aourednik/historical-basemaps' style='color: #fff'>open source</a>. The wrapper for the 3D processing was also <a href='https://github.com/vasturiano/react-globe.gl' style='color: #fff'>open source</a>! <br/> <hr/> Varoon Raghupathi"
             }
         ]
     }
